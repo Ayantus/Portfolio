@@ -1,41 +1,37 @@
+<!doctype html>
 <html lang="en">
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Baymax — Clean Business Landing</title>
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>Michaele Ash — Portfolio</title>
   <link rel="stylesheet" href="styles.css" />
   <style>
-    /* Fallback styles if styles.css is empty/missing */
+    /* Safe default styles in case styles.css isn't loaded */
     :root { --max: 1000px; }
-    *{box-sizing:border-box} body{margin:0;font-family:system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;color:#222}
+    *{box-sizing:border-box} body{margin:0;font-family:system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;color:#222;line height:1.45}
+    a{text-decoration:none;color:inherit}
     .wrap{max-width:var(--max);margin:0 auto;padding:0 1rem}
     header{border-bottom:1px solid #eee;background:#fafafa}
-    header .wrap{display:flex;align-items:center;justify-content:space-between;padding:0.9rem 1rem}
-    nav a{margin-left:1rem;text-decoration:none;color:#333}
-    .hero{padding:3rem 0;text-align:center;border-bottom:1px solid #eee}
-    .hero h1{margin:0 0 .5rem;font-size:2rem}
-    .hero p{margin:.25rem 0 1rem}
-    .cta{display:inline-block;border:1px solid #222;padding:.6rem .9rem;text-decoration:none}
-    section{padding:2.25rem 0}
+    header .wrap{display:flex;align-items:center;justify-content:space-between;padding:.9rem 0}
+    nav a{margin-left:1rem;color:#333}
+    .hero{padding:2.75rem 0;text-align:center;border-bottom:1px solid #eee}
+    .hero h1{margin:0 0 .4rem;font-size:2rem}
+    .hero p{margin:.25rem 0 1rem;color:#555}
+    .cta{display:inline-block;border:1px solid #222;padding:.6rem .9rem}
+    section{padding:2rem 0}
     h2{margin:0 0 1rem}
     .grid{display:grid;gap:1rem;grid-template-columns:repeat(auto-fit,minmax(240px,1fr))}
     .card{border:1px solid #eee;border-radius:10px;padding:1rem;background:#fff;box-shadow:0 1px 2px rgba(0,0,0,.05)}
     .card h3{margin-top:0}
     footer{border-top:1px solid #eee;padding:1rem 0;text-align:center;background:#fafafa}
-    .muted{color:#666;font-size:.95rem}
+    .muted{color:#666}
   </style>
 </head>
 <body>
-  <header class="site-header">
-    <div class="container">
-      <h1>Baymax Solutions</h1>
   <header>
     <div class="wrap">
       <strong>Michaele Ash</strong>
       <nav>
-        <a href="#services">Services</a>
         <a href="#projects">Projects</a>
         <a href="#about">About</a>
         <a href="#contact">Contact</a>
@@ -43,33 +39,14 @@
     </div>
   </header>
 
-  <section class="hero">
-    <div class="container">
-      <h2>Simple, fast websites for small businesses.</h2>
-      <p>I build clean, responsive pages that help clients trust you and contact you.</p>
-      <a class="cta" href="#contact">Get a Free Quote</a>
   <div class="hero">
     <div class="wrap">
       <h1>Portfolio</h1>
       <p class="muted">Showcasing my website, automation, and data projects. Available for night-shift remote work.</p>
       <a class="cta" href="#projects">See Projects</a>
     </div>
-  </section>
   </div>
 
-  <section id="services" class="section">
-    <div class="container grid">
-      <div class="card">
-        <h3>Starter Landing</h3>
-        <p>One-page site with contact form and mobile-friendly layout.</p>
-      </div>
-      <div class="card">
-        <h3>Business Package</h3>
-        <p>Up to 5 pages, basic SEO, and Google Maps integration.</p>
-      </div>
-      <div class="card">
-        <h3>E‑commerce Ready</h3>
-        <p>Product pages and checkout via Shopify/WooCommerce.</p>
   <section id="projects">
     <div class="wrap">
       <h2>Projects</h2>
@@ -93,46 +70,27 @@
     </div>
   </section>
 
-  <section id="about" class="section alt">
-    <div class="container narrow">
   <section id="about">
     <div class="wrap">
       <h2>About</h2>
-      <p>I'm Ayantu, a beginner developer focused on clean, accessible web experiences.
-      I work nights and deliver quickly with great communication.</p>
       <p>I’m Michaele, a beginner developer focused on practical websites, simple automations, and clear data reports.
-          I deliver quickly during night hours and keep communication straightforward.</p>
+         I deliver quickly during night hours and keep communication straightforward.</p>
     </div>
   </section>
 
-  <section id="contact" class="section">
-    <div class="container narrow">
   <section id="contact">
     <div class="wrap">
       <h2>Contact</h2>
-      <form id="contact-form">
-        <label>Name <input name="name" placeholder="Your name" required></label>
-        <label>Email <input name="email" type="email" placeholder="you@example.com" required></label>
-        <label>Message <textarea name="message" rows="4" placeholder="Tell me about your project"></textarea></label>
-        <button type="submit">Send</button>
-      </form>
-      <p id="form-status" class="status" aria-live="polite"></p>
       <p>Email: <a href="mailto:michaeleash23@gmail.com">michaeleash23@gmail.com</a> &nbsp;•&nbsp; Availability: Nights (PT)</p>
     </div>
   </section>
 
-  <footer class="site-footer">
-    <div class="container">
-      <small>© 2025 Ayantu — Portfolio Demo</small>
   <footer>
     <div class="wrap">
       <small>© <span id="y"></span> Michaele Ash</small>
     </div>
   </footer>
 
-  <script src="script.js"></script>
-  <script>
-    document.getElementById('y').textContent = new Date().getFullYear();
-  </script>
+  <script>document.getElementById('y').textContent = new Date().getFullYear();</script>
 </body>
 </html>
